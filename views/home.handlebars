@@ -1,0 +1,31 @@
+<h1>Waiters WebApp</h1>
+
+       <form action="waiters/{{username}}" method="get">
+
+            <div class="textbox">
+            <input type="text" placeholder="Enter Your Name" name="textbox">
+
+        </div>
+
+        <br/>
+
+          <div waiterBtn>
+            <a href="/waiters/{{username}}">
+            <button class="waiterBtn" type="submit" name="button"> Waiter</button>
+            </a>
+        </div>
+
+        {{!-- <a href="/reset">
+    <button class="resetBtn" on type="submit" name="button" value="reset">Reset
+    </button>
+</a> --}}
+
+        <br/>
+
+        <div adminBtn>
+            <a href="/days">
+            <button class="adminBtn" type="submit" name="button"> Admin</button>
+            </a>
+        </div>
+
+       </form>

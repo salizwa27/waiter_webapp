@@ -1,0 +1,31 @@
+<h1>Hello Waiter</h1>
+
+<form action="/waiters/{{username}}" method="post">
+
+   {{#if messages.info}}
+<div class="entry">
+     {{messages.info}}
+</div>
+{{/if}}
+
+<p>Please Select The Days You Would Like To Work</p>
+
+<div class="textbox">
+            <input type="text" placeholder="Enter Your Name" name="textbox" value="{{username}}">
+
+        </div>
+
+
+
+   {{#each weekdays}}
+
+     <input type="checkbox" name="days"  value="{{this.day_name}}" id="{{this.id}}">{{this.day_name}}
+
+   {{/each }}
+
+  
+     <br/><br/>
+     
+  <input type="submit" value="Submit">
+
+</form>
